@@ -1,0 +1,31 @@
+<h2>Les livres</h2>
+
+
+
+<div class="container">
+
+  
+  <div class="row">
+
+    <div class="col-md-8">
+
+      <div class="container">
+
+        <app-book
+          *ngFor="let book of books"
+             [data]="book">
+            
+          </app-book>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+      <app-book></app-book>
+
+    </div>
+
+  </div>
+
